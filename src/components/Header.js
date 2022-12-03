@@ -4,9 +4,9 @@ import styles from './Header.module.css'
 export default function Header() {
   return (
     <header>
-        <h3 className={styles['header-name']}>Om Gate</h3>
+        <h2 className={styles['header-name']}>Om Gate</h2>
 
-        <ul>
+        <ul className={styles['header-list']} >
             <li>
                 <a href='/'>
                     Home
