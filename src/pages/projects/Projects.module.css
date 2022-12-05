@@ -1,6 +1,8 @@
+
+
 .project-grid {
     display: grid;
-    max-width: 80%;
+    max-width: 90%;
     margin: 5rem auto;
     grid-template-columns: repeat(3, auto);
     
@@ -42,4 +44,22 @@
     width: 150px;
     margin: 1.5rem auto;
     outline: 2px solid white;
+}
+
+@media(max-width:400px){
+    .project-grid {
+        grid-template-columns: repeat(1 , auto);
+        
+        
+    }
+
+    .project-container {
+        max-width: 90%;
+        padding: 1rem 0;
+
+    }
+
+    .project-container > img {
+        width: 100px;
+    }
 }
