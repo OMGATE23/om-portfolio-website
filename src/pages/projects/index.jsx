@@ -6,7 +6,8 @@ import styles from './Projects.module.css'
 export default function index() {
   console.log(ProjectsList)
   return (
-    <div className={styles['project-grid']}>
+    <div >
+      <div className={styles['project-grid']}>
       {
         ProjectsList.map((project) => {
           return (
@@ -20,7 +21,7 @@ export default function index() {
           )
         })
       }
-      
+      </div>
     </div>
   )
 }

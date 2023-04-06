@@ -2,7 +2,7 @@
 
 .project-grid {
     display: grid;
-    max-width: 90%;
+    max-width: 80%;
     margin: 5rem auto;
     grid-template-columns: repeat(3, auto);
     
