@@ -2,9 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 export default function Header() {
   return (
-    <nav className='sticky top-0 left-0 backdrop-blur-xl text-textColor flex rounded-b-xl shadow-md items-center h-[10vh]'>
-        <h2 className='justify-self-start ml-8 text-4xl font-semibold '>Om Gate</h2>
-        <div className='h-full text-tex justify-self-center  mx-auto'>
+    <nav className='px-12 text-textColor flex rounded-b-xl shadow-md items-center justify-between h-[10vh]'>
+        <h2 className=' ml-2 text-3xl lg:text-4xl font-semibold '>Om Gate</h2>
+        <div className='h-full'>
         <ul className=' h-full flex items-center gap-24 text-xl '>
             <li className='transition-transform duration-300 hover:border-b-2 hover:translate-y-[-5px] border-black font-bold hover:cursor-pointer'>
                 <Link to='/'>
@@ -19,14 +19,12 @@ export default function Header() {
             </li>
 
             <li className='transition-transform duration-300 hover:border-b-2 hover:translate-y-[-5px] border-black font-bold hover:cursor-pointer'>
-                <Link to = '/blogs'>
-                    Blogs
-                </Link>
+                <a href="https://omgate.hashnode.dev/">Blogs</a>
             </li>
         </ul>
         
         </div>
-        <h2 className='justify-self-start mr-8 text-4xl font-semibold outline outline-2 text-transparent'>Om Gate</h2>
+        
     </nav>
   )
 }

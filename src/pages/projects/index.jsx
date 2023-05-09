@@ -7,11 +7,11 @@ export default function index() {
   return (
     <div >
       <h1 className='text-center text-7xl mt-10 font-semibold'>My <span className='text-primaryColor'>Projects💻</span></h1>
-      <div className=" justify-items-center my-12 grid grid-cols-1 lg:grid-cols-3">
+      <div className=" justify-items-center my-12 grid grid-cols-1 grid-flow-row lg:grid-cols-3">
       {
         ProjectsList.map((project) => {
           return (
-            <div className="shadow-lg py-8 px-12 text-center max-w-[400px] max-h-[550px] rounded-3xl">
+            <div className="shadow-lg py-8 px-12 text-center max-w-[400px] max-h-[550px] mt-12 rounded-3xl">
               <h3 className=" text-2xl font-semibold text-primaryColor">{project.name}</h3>
               <p className="text-gray-500 my-4 mx-auto">{project.description}</p>
               <img className='block mx-auto my-10 max-w-[300px]' src = {project.src}/>
