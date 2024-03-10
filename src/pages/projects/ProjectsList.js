@@ -40,17 +40,17 @@ export const ProjectsList = [
     projectLink: "https://getlearntube.vercel.app/",
     sourceLink: "https://github.com/OMGATE23/learntube",
   },
-  {
-    name: "NebulaFontify",
-    description: (
-      <span className="text-purple-700">
-        Create stunning typographic designs for any website
-      </span>
-    ),
-    src: nebulaFontify,
-    projectLink: "https://nebulafontify.vercel.app/",
-    sourceLink: "https://github.com/OMGATE23/nebula-fontify",
-  },
+  // {
+  //   name: "NebulaFontify",
+  //   description: (
+  //     <span className="text-purple-700">
+  //       Create stunning typographic designs for any website
+  //     </span>
+  //   ),
+  //   src: nebulaFontify,
+  //   projectLink: "https://nebulafontify.vercel.app/",
+  //   sourceLink: "https://github.com/OMGATE23/nebula-fontify",
+  // },
   {
     name: "YourFitnessPro",
     description: (

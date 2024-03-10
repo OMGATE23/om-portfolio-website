@@ -24,24 +24,24 @@ export default function Header() {
             </li>
         </ul>
         </div>
-        <button onClick={() => setShowModal(true)} ><img width={24}  src = '/hamburger.svg'/></button>
+        <button className='md:hidden' onClick={() => setShowModal(true)} ><img width={24}  src = '/hamburger.svg'/></button>
         {
             showModal && (<div className='h-[100dvh] w-[100vw] bg-neutral-900 fixed top-0 left-0 z-[100]'>
                 <ul className=' h-full flex flex-col justify-center gap-8 md:hidden items-center text-xl '>
             <li className='transition-transform duration-300 hover:border-b-2 border-neutral-50 font-semibold hover:cursor-pointer'>
-                <Link to='/'>
+                <Link onClick={() => setShowModal(false)} to='/'>
                     Home
                 </Link>
             </li>
 
             <li className='transition-transform duration-300 hover:border-b-2 border-neutral-50 font-semibold hover:cursor-pointer'>
-                <Link to='/projects'>
+                <Link onClick={() => setShowModal(false)} to='/projects'>
                     Projects
                 </Link>
             </li>
 
             <li className='transition-transform duration-300 hover:border-b-2 border-neutral-50 font-semibold hover:cursor-pointer'>
-                <a href="https://omgate.hashnode.dev/">Blogs</a>
+                <a onClick={() => setShowModal(false)} href="https://omgate.hashnode.dev/">Blog</a>
             </li>
         </ul>
         <button onClick={() => setShowModal(false)} className='z-[120] absolute top-4 right-4'><img width={24} src='/closs.svg' /></button>
