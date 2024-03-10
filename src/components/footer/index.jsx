@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="h-[20vh] flex flex-col justify-center items-center bg-primaryColor">
-      <ul className="h-[10vh] w-[20rem] mt-4 mx-auto flex items-center justify-around"> 
+    <div className="h-[20vh] flex flex-col justify-center items-center">
+      <ul className="h-[10vh] w-full mt-4 mx-auto flex items-center justify-center gap-8"> 
           
         <li>
           <a href="https://github.com/OMGATE23">

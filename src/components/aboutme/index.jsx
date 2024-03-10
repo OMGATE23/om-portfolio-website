@@ -3,72 +3,71 @@ import illustration from "../../assets/Web development _Isometric.svg";
 import { StarIcon } from "@heroicons/react/20/solid";
 const Aboutme = () => {
   return (
-    <div className="h-[90vh] bg-LightGray02 pt-8">
-        <h2 className=" pt-10 h-[10vh] flex items-center justify-center text-center font-semibold text-7xl"><span>Hey, I'm <span className="text-primaryColor">Om 👋</span></span></h2>
-      <div className=" h-[75vh] flex items-center justify-evenly  ">
+    <div className=" pt-8">
+        <h2 className=" py-4 text-center font-semibold text-6xl md:text-7xl">Hey, I'm Om 👋</h2>
+      <div className=" my-4 flex flex-col-reverse md:flex-row items-center justify-evenly  ">
         <div>
-          <ul className="w-[620px] px-4 ">
-            <li className="flex items-center leading-10 my-4 text-xl gap-3 font-semibold text-black">
+          <ul className=" px-4 ">
+            <li className="flex md:border-none border-y-[1px] py-4 border-neutral-800  items-center justify-start md:leading-10 my-4 text-lg md:text-xl gap-4 font-semibold ">
               <StarIcon width={20} />
-              <span>
-                I am{" "}
-                <span className=" inline-block transition-all text-primaryColorFaded75 duration-300 hover:cursor-pointer hover:text-primaryColor hover:translate-y-[-5px]">
-                  <span>
-                    <a className="block font-bold text-xl">Om Gate</a>
-                  </span>
-                </span>
+              <span className="w-[80%]">
+                I am Om Gate
+                
               </span>
             </li>
-            <li className="flex items-center leading-10 my-4 text-xl gap-3 font-semibold text-black">
-              <StarIcon width={20} />I am a Full-Stack Developer
+            <li className="flex md:border-none border-b-[1px] pb-4 border-neutral-800  items-center md:leading-10 my-4 text-lg md:text-xl gap-4 font-semibold ">
+              <StarIcon width={20} /><span>I am a Full-Stack Developer</span>
             </li>
-            <li className="flex items-start leading-10 my-4 text-xl gap-3 font-semibold text-black">
-              <StarIcon className="mt-2" width={26} />
-              <span>
+            <li className="flex md:border-none border-b-[1px] pb-4 border-neutral-800  items-center md:leading-10 my-4 text-lg md:text-xl gap-4 font-semibold ">
+              <StarIcon width={20} /><div className="w-[80%]">Currently Interning at <span className="text-purple-400">Vidyartha.org</span></div>
+            </li>
+            <li className="flex md:border-none border-b-[1px] pb-4 border-neutral-800 items-start md:leading-10 my-4 text-lg md:text-xl gap-4 font-semibold ">
+            <StarIcon width={20} />
+              <span className="w-[80%]">
                 Skills include :{" "}
-                <span className="text-primaryColorFaded75 font-bold">
+                <span className="font-bold">
                   {" "}
-                  <span className=" inline-block transition-all duration-300 hover:cursor-pointer hover:text-primaryColor hover:translate-y-[-5px]">
+                  <span className=" transition-all duration-300 hover:cursor-pointer hover:translate-y-[-5px]">
                     Javascript
                   </span>
                   {" , "}
-                  <span className=" inline-block transition-all duration-300 hover:cursor-pointer hover:text-primaryColor hover:translate-y-[-5px]">
+                  <span className=" transition-all duration-300 hover:cursor-pointer hover:translate-y-[-5px]">
                     Node.js
                   </span>
                   {" , "}
-                  <span className=" inline-block transition-all duration-300 hover:cursor-pointer hover:text-primaryColor hover:translate-y-[-5px]">
+                  <span className=" transition-all duration-300 hover:cursor-pointer hover:translate-y-[-5px]">
                     Express
                   </span>
                   {" , "}
-                  <span className=" inline-block transition-all duration-300 hover:cursor-pointer hover:text-primaryColor hover:translate-y-[-5px]">
+                  <span className=" transition-all duration-300 hover:cursor-pointer hover:translate-y-[-5px]">
                     MongoDB
                   </span>
                   {" , "}
-                  <span className=" inline-block transition-all duration-300 hover:cursor-pointer hover:text-primaryColor hover:translate-y-[-5px]">
+                  <span className=" transition-all duration-300 hover:cursor-pointer hover:translate-y-[-5px]">
                     HTML
                   </span>
                   {" , "}
-                  <span className=" inline-block transition-all duration-300 hover:cursor-pointer hover:text-primaryColor hover:translate-y-[-5px]">
+                  <span className=" transition-all duration-300 hover:cursor-pointer hover:translate-y-[-5px]">
                     CSS
                   </span>
                   {" , "}
-                  <span className=" inline-block transition-all duration-300 hover:cursor-pointer hover:text-primaryColor hover:translate-y-[-5px]">
+                  <span className=" transition-all duration-300 hover:cursor-pointer hover:translate-y-[-5px]">
                     Tailwind
                   </span>
                 </span>
               </span>
             </li>
-            <li className="flex items-center leading-10 my-4 text-xl gap-3 font-semibold text-black">
+            <li className="flex md:border-none border-b-[1px] pb-4 border-neutral-800  items-center md:leading-10 my-4 text-lg md:text-xl gap-4 font-semibold ">
               <StarIcon width={20} />
-              Student at College of Engineering, Pune {"(2025 Batch)"}{" "}
+              <span className="w-[80%]">Student at College of Engineering, Pune {"(2025 Batch)"}{" "}</span>
             </li>
-            <li className="flex items-center leading-10 my-4 text-xl gap-3 font-semibold text-black">
-              <StarIcon width={20} />I love web-development 😊
+            <li className="flex md:border-none border-b-[1px] pb-4 border-neutral-800  items-center md:leading-10 my-4 text-lg md:text-xl gap-4 font-semibold ">
+              <StarIcon width={20} /><span className="w-[80%]">I love web-development 😊</span>
             </li>
           </ul>
         </div>
         <div className="">
-          <img className="scale-125" src={illustration} alt="" />
+          <img className=" w-[240px] md:w-[360px]" src={illustration} alt="" />
         </div>
       </div>
     </div>

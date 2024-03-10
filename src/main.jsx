@@ -5,10 +5,12 @@ import Footer from './components/footer'
 
 const Main = () => {
   return (
-    <div>
-        <Header/>
-        <Outlet/>
-        <Footer/>
+    <div className='bg-black p-8 text-neutral-50'>
+        <div className='bg-neutral-900 p-2 rounded-lg'>
+          <Header/>
+          <Outlet/>
+          <Footer/>
+        </div>
     </div>
   )
 }

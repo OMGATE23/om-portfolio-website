@@ -3,20 +3,19 @@ import {ProjectsList} from './ProjectsList'
 
 
 export default function index() {
-  console.log(ProjectsList)
   return (
-    <div >
-      <h1 className='text-center text-7xl mt-10 font-semibold'>My <span className='text-primaryColor'>Projects💻</span></h1>
-      <div className=" justify-items-center my-12 grid grid-cols-1 grid-flow-row lg:grid-cols-3">
+    <div className='fade-in'>
+      <h1 className='text-center text-5xl md:text-7xl mt-10 font-semibold'>My <span className=''>Projects💻</span></h1>
+      <div className=" justify-items-center my-12 mx-4 grid grid-cols-1 grid-flow-row md:gap-8 lg:grid-cols-3">
       {
         ProjectsList.map((project) => {
           return (
-            <div className="shadow-lg py-8 px-12 text-center max-w-[400px] max-h-[550px] mt-12 rounded-3xl">
-              <h3 className=" text-2xl font-semibold text-primaryColor">{project.name}</h3>
+            <div className="flex flex-col items-center justify-evenly py-8 px-4 md:px-12 text-center w-[100%] md:max-w-[400px] max-h-[550px] mt-12 rounded-lg outline outline-1 outline-neutral-800">
+              <h3 className=" text-2xl font-semibold ">{project.name}</h3>
               <p className="text-gray-500 my-4 mx-auto">{project.description}</p>
-              <img className='block mx-auto my-10 max-w-[300px]' src = {project.src}/>
-              <a className='block transition-all duration-300 mx-auto border-[3px] border-purple-700 my-2 rounded-2xl w-[10rem] py-2 text-lg font-semibold hover:text-purple-700 text-white bg-purple-700 hover:bg-white' href={project.projectLink}>Live Demo</a>
-              <a  className = 'block transition-all duration-300 mx-auto border-[3px] border-red-600 my-2 rounded-2xl w-[10rem] py-2 text-lg font-semibold hover:text-red-600 text-white bg-red-600 hover:bg-white' href={project.sourceLink}>Source Code</a>
+              <img className='block mx-auto my-10 outline outline-1  rounded-lg outline-neutral-700 w-[80%] md:w-full' src = {project.src}/>
+              <a className='block transition-all duration-300 mx-auto border-[3px] border-purple-700 my-2 rounded-lg w-[10rem] py-2 text-lg font-semibold hover:text-purple-700 text-white bg-purple-700 hover:bg-white' href={project.projectLink}>Live Demo</a>
+              <a  className = 'block transition-all duration-300 mx-auto border-[3px] border-red-600 my-2 rounded-lg w-[10rem] py-2 text-lg font-semibold hover:text-red-600 text-white bg-red-600 hover:bg-white' href={project.sourceLink}>Source Code</a>
             </div>
           )
         })
