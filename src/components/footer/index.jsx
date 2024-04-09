@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="h-[20vh] flex flex-col justify-center items-center">
+    <div className="h-[20vh] flex flex-col justify-center items-center border-t border-neutral-800">
       <ul className="h-[10vh] w-full mt-4 mx-auto flex items-center justify-center gap-8"> 
           
         <li>
