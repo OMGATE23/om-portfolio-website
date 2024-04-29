@@ -14,13 +14,13 @@ export default function Header() {
             </li>
 
             <li className='transition-transform duration-300 hover:border-b-2 border-neutral-50 font-semibold hover:cursor-pointer'>
-                <Link to='/projects'>
+                <Link to='/#content'>
                     Projects
                 </Link>
             </li>
 
             <li className='transition-transform duration-300 hover:border-b-2 border-neutral-50 font-semibold hover:cursor-pointer'>
-                <a href="https://omgate.hashnode.dev/">Blogs</a>
+                <a href="/#blogs">Blogs</a>
             </li>
         </ul>
         </div>
@@ -35,13 +35,13 @@ export default function Header() {
             </li>
 
             <li className='transition-transform duration-300 hover:border-b-2 border-neutral-50 font-semibold hover:cursor-pointer'>
-                <Link onClick={() => setShowModal(false)} to='/projects'>
+                <Link onClick={() => setShowModal(false)} to='/#content'>
                     Projects
                 </Link>
             </li>
 
             <li className='transition-transform duration-300 hover:border-b-2 border-neutral-50 font-semibold hover:cursor-pointer'>
-                <a onClick={() => setShowModal(false)} href="https://omgate.hashnode.dev/">Blog</a>
+                <a onClick={() => setShowModal(false)} href="/#blogs">Blog</a>
             </li>
         </ul>
         <button onClick={() => setShowModal(false)} className='z-[120] absolute top-4 right-4'><img width={24} src='/closs.svg' /></button>

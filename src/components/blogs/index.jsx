@@ -2,7 +2,7 @@ import React from 'react'
 import BlogsList from '../blogs/Blogs'
 const BlogsComponent = () => {
   return (
-    <div className='fade-in flex flex-col items-center justify-center my-12'>
+    <div id = "blogs" className='fade-in flex flex-col items-center justify-center my-12'>
       <h1 className='text-center text-4xl leading-[4rem] md:text-7xl mt-10 font-semibold'>My <span className=''>Blogs 📔</span></h1>
       <div className=" justify-items-center md:my-12 mx-4 grid grid-cols-1 grid-flow-row md:gap-8 lg:grid-cols-3 items-center">
       {
@@ -17,7 +17,6 @@ const BlogsComponent = () => {
         )
       }
       </div>
-      <a className='mx-auto block bg-blue-800 text-lg py-2 px-4 rounded-md text-white' href='https://omgate.hashnode.dev/' >More Blogs</a>
     </div>
   )
 }

@@ -1,7 +1,8 @@
-import InfiniteScroll from "../../assets/blogs/infinite-scrolling.png";
+import InfiniteScroll from "../../assets/blogs/infinite-scrolling.jpeg";
 import GoogleAuth from "../../assets/blogs/google-auth.png";
 import JSPromises from "../../assets/blogs/js-promises.png";
 import BreakFree from "../../assets/blogs/breakfree.avif";
+import Inputs from "../../assets/blogs/inputs.jpeg";
 
 let BlogsList = [
   {
@@ -24,6 +25,12 @@ let BlogsList = [
     title: "BreakFree : Where Digital Balance Begins!",
     img: BreakFree,
     href: "https://omgate.hashnode.dev/breakfree-where-digital-balance-begins",
+  },
+  {
+    title:
+      "Input tags: 7 different types of input tags you should know in HTML5",
+    img: Inputs,
+    href: "https://omgate.hashnode.dev/input-tags-7-different-types-of-input-tags-you-should-know-in-html5",
   },
 ];
 

@@ -8,7 +8,7 @@ import Blogs from "../../pages/blogs"
 const Content = () => {
     const navigate = useNavigate()
   return (
-    <div className=" pt-8">
+    <div id = 'content' className=" pt-8">
 
       <Projects/>
     </div>

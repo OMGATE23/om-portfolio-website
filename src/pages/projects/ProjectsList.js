@@ -5,19 +5,11 @@ import LearnTube from "../../assets/LearnTube.png";
 import YourFitnessPro from "../../assets/YourFitnessPro.png";
 import Formify from "../../assets/Formify.png";
 import Breakfree from "../../assets/BreakFree.png";
+import Infinite from "../../assets/Infinite-scrolling.png";
+import Calendar from "../../assets/Calendar.png";
+import StudyBuddy from "../../assets/StudyBuddy.png";
 
 export const ProjectsList = [
-  {
-    name: "Formify",
-    description: (
-      <span className="text-blue-400">
-        Swiftly sculpt your ideas with our effortless form creator.
-      </span>
-    ),
-    src: Formify,
-    projectLink: "https://formifypro.vercel.app/",
-    sourceLink: "https://github.com/OMGATE23/formbuilder",
-  },
   {
     name: "BreakFree",
     description: (
@@ -40,17 +32,50 @@ export const ProjectsList = [
     projectLink: "https://getlearntube.vercel.app/",
     sourceLink: "https://github.com/OMGATE23/learntube",
   },
-  // {
-  //   name: "NebulaFontify",
-  //   description: (
-  //     <span className="text-purple-700">
-  //       Create stunning typographic designs for any website
-  //     </span>
-  //   ),
-  //   src: nebulaFontify,
-  //   projectLink: "https://nebulafontify.vercel.app/",
-  //   sourceLink: "https://github.com/OMGATE23/nebula-fontify",
-  // },
+  {
+    name: "Calendar",
+    description: (
+      <span className="text-indigo-500">
+        A calendar app for all your scheduling needs.
+      </span>
+    ),
+    src: Calendar,
+    projectLink: "https://calendar-pro-c3vm.vercel.app/",
+    sourceLink: "https://github.com/OMGATE23/calendar-pro",
+  },
+  {
+    name: "React Intersection Observer",
+    description: (
+      <span className="text-green-400">
+        An npm package for intersection observer
+      </span>
+    ),
+    src: Infinite,
+    sourceLink: "https://github.com/OMGATE23/intersection-observer-react",
+  },
+  {
+    name: "StudyBuddy",
+    description: (
+      <span className="text-indigo-500">
+        An extension for your distraction free studies
+      </span>
+    ),
+    src: StudyBuddy,
+    projectLink:
+      "https://drive.google.com/file/d/1_2E1I4UtQ4avU80ehg6OCtjEXCgGhM_E/view?usp=sharing",
+    sourceLink: "https://github.com/OMGATE23/padhle-mere-bhai",
+  },
+  {
+    name: "Formify",
+    description: (
+      <span className="text-blue-400">
+        Swiftly sculpt your ideas with our effortless form creator.
+      </span>
+    ),
+    src: Formify,
+    projectLink: "https://formifypro.vercel.app/",
+    sourceLink: "https://github.com/OMGATE23/formbuilder",
+  },
   {
     name: "YourFitnessPro",
     description: (
