@@ -51,6 +51,7 @@ export const ProjectsList = [
       </span>
     ),
     src: Infinite,
+    projectLink: "https://github.com/OMGATE23/intersection-observer-react/",
     sourceLink: "https://github.com/OMGATE23/intersection-observer-react",
   },
   {
